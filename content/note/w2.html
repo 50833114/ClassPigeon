@@ -141,14 +141,14 @@ ul.nav a { zoom: 1; }  /* zoom 屬性可為 IE 提供修正連結之間多餘空
 
 <body>
 <div class="container">
-  <div class="header"><img src="pic/cropped.jpg" width="200" height="200" /><a href="#"></a> 
+  <div class="header"><img src="../../pic/cropped.jpg" width="200" height="200" /><a href="#"></a> 
   <h1 style="text-align:center">50833114 網際內容管理嗎</h1>
     <!-- end .header --></div>
   <div class="sidebar1">
     <ul class="nav">
-      <li><a href="#"><h3>首頁</h3></a></li>
+      <li><a href="../../index.html"><h3>首頁</h3></a></li>
       <li><a href="#"><h3>關於</h3></a></li>
-      <li><a href="content/note.html"><h3>網管筆記</h3></a></li>
+      <li><a href="../note.html"><h3>網管筆記</h3></a></li>
       <li><a href="#"><h3>佛經</h3></a></li>
       <li><a href="#"><h3>兒歌好多首</h3></a></li>
     </ul>
@@ -157,34 +157,48 @@ ul.nav a { zoom: 1; }  /* zoom 屬性可為 IE 提供修正連結之間多餘空
     <p></p>
     <!-- end .sidebar1 --></div>
   <div class="content">
-    <h1>嘿嘿嘿老師別當我</h1>
-    <h3>這裡是50833114的網際內容管理課程網頁。</h3>
-    <p>☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆
+    <h1>50833114的網管筆記</h1>
+    <table width="200" border="1">
+  <tr>
+    <th>W1</th>
+    <tH><a href="W2.html">W2</a></th>
+    <th><a href="W3.html">W3</a></th>
+    <th><a href="W4.html">W4</a></th>
+  </tr>
+  <tr>
+    <th><a href="W5.html">W5</a></th>
+    <td><a href="W6.html">W6</a></td>
+    <td><a href="W7.html">W7</a></td>
+    <td><a href="W8.html">W8</a></td>
+  </tr>
+  <tr>
+    <td><a href="W9.html">W9</a></td>
+    <td><a href="W10.html">W10</a></td>
+    <td>W11</td>
+    <td>W12</td>
+  </tr>
+</table>
+	<h1>W2</h1>
+	<h3>建網站</h3>
+		<p>此內容管理系統以 https:..github.com.mdecourse.cmsimde 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
 
-☆♂◢■◣♂◢■◣◢■◣♂◢■◣◢■◣♂◢■◣♀★
+	<h3>利用 cmsimde 建立靜態網誌方法:</h3>
+		<p>  1.在 github 建立倉儲, git clone 到近端</p>
+		<p>  2.參考https:..github.com.mdecourse.newcms, 加入除了 cmsimde 目錄外的所有內容</p>		
 
-☆♀■■■■■■■■■■■■■■■■■■■■■♂★
+<p>在 github 建立倉儲, git clone 到近端
+參考https:..github.com.mdecourse.newcms, 加入除了 cmsimde 目錄外的所有內容
+以 git submodule add https:..github.com.mdecourse.cmsimde cmsimde
 
-☆♂◥■■■■■◤◥■■■■■◤◥■■■■■◤♀★
+建立 cmsimde 目錄, 並從 github 取下子模組內容.
 
-☆♀☆◥■■■◤☆★◥■■■◤☆★◥■■■◤★♂★
+3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.
 
-☆♂☆☆◥■◤☆★☆★◥■◤☆★☆★◥■◤★★♀★
+動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.
 
-☆♀☆☆☆▼☆★☆★☆★▼☆★☆★☆★▼★★★♂★
-☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆
-
-☆♂◢■◣♂◢■◣◢■◣♂◢■◣◢■◣♂◢■◣♀★
-
-☆♀■■■■■■■■■■■■■■■■■■■■■♂★
-
-☆♂◥■■■■■◤◥■■■■■◤◥■■■■■◤♀★
-
-☆♀☆◥■■■◤☆★◥■■■◤☆★◥■■■◤★♂★
-
-☆♂☆☆◥■◤☆★☆★◥■◤☆★☆★◥■◤★★♀★
-
-☆♀☆☆☆▼☆★☆★☆★▼☆★☆★☆★▼★★★♂★</p>
+之後若要以 git clone 取下包含 submodule 的所有內容, 執行:
+git clone --recurse-submodules https:..github.com.mdecourse.newcms.git</p>
+    <p>&nbsp;</p>
     <!-- end .content --></div>
   <div class="footer">
     <p style="text-align:center">此網頁由國立虎尾科技大學五專部學生50833114所建立。</p>
